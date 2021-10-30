@@ -1,0 +1,107 @@
+alert('..'): trang xuất thông báo 
+-- một số hàm built-in 
+	1.Alert: xuất hiện hộp thoại 
+	2.Console
+	3.Confim
+		cảnh báo hỏi người dùng 
+	4.Prompt
+		hỏi người dùng và có ô để trả lời 
+	5.Set timeout
+		thực hiện đoạn code của bạn sau một khoảng thời gian nhất định
+			ex: setTimeout(function(){
+					alert('thong bao')
+					},1000)   //1000 mili giây = 1 s
+	6.Set interval
+		chạy liên tục cách 1s lại chạy 1 lần 
+
+-backslash(\' = ')   , \\=\
+
+-slice(..,..): cắt chuỗi( vị trí đầu vị trí kết thúc) 
+-Replace: ghi đè
+-trim(): loại bỏ khoảng chắn ở 2 đầu 
+-Split: cactws chuỗi thành array 
+-toFixed(): làm tròn 
+
+===========Làm việc với array===
+1.ToString : màn biến đổi thành chuỗi khăn cản bởi dấu phẩy
+2.Join: thêm vào dấu gì đó 
+3.pop : xóa phần tử cuối mảng 
+4.Push: thêm một hoặc nhiều phần tử vào cuối mảng 
+5.Shift : xóa phần tử ở đầu mảng 
+6.Unshift: Thêm phần tử ở đầu mảng 
+7.Splicing(..,..,..):(đặt con trỏ vị trí nào, xóa mấy vị trí từ con trỏ đó trở đi,thêm phần tử vào vị trí đó(tên gì))
+8.Concat : gộp hai mảng vào một mảng 
+9.Slice : cắt một vài phần tử  của mảng 
+--------------
+-public : là kiểu dữ liệu khai báo thuộc loại công cộng, những phương thức hoặc biến với kiểu dữ liệu này sẽ được truy xuất và sử dụng ở đâu cũng được.
+-private: là kiểu kiểu dữ liệu khai báo thuộc loại nội bộ, những phương thức hoặc biến với kiểu dữ liệu này sẽ được truy xuất và sử dụng trong nội bộ của Class nơi mà phương thức hoặc biến đó được khai báo.
+-protected: là kiểu dữ liệu khai báo cũng thuộc loại nội bộ như Private, nhưng thêm vào đó những phương thức hoặc biến với kiểu dữ liệu này ngoài việc sử dụng trong nội bộ Class, chúng còn có thể được truy xuất ở Class con kế thừa Class khai báo hàm hoặc phương thức đó.
+
+-arguments: truyền vào bao nhêu phần tử cũng dc cũng in ra  
+
+----------function---------
+1.Declaration function : có thể  gọi hàm ra kết quả trước trước khi định nghĩa 
+2.Expression function : định nghãi mới có thể gọi hàm
+3.Arrow function: 
+
+	ex  var... = function(){ 	|| function ....(){
+			}				}
+//Function--> Phương thức -- method
+//Others--> Thuộc tính -- property
+------------
+-date : ngày tháng năm giờ giấc 
+
+===========làm viêc với mảng =================
+array methods:
+-forEach();:: gọi từng phần tử trong mảng
+	courses.forEach(function(course,index){
+   	console.log(index,course);
+	});
+
+-every();:: Kiểm tra tất cả nếu đúng có thỏa mãn điều kiện ko trả về true false
+	var isFree = courses.every(function(course,index){
+		console.log(index);
+    		return course.coin ===0;
+		});
+	console.log(isFree)
+-some();:: kiểm tra mảng nếu có 1 phần tử đúng thui là trả về true
+	var isFree = courses.some(function(course,index){
+    		return course.coin ===0;
+		})
+		console.log(isFree)
+-find();:: tìm phần tử trong mảng 
+	var course = courses.find(function(course,index){
+   		 return course.name==='Ruby';
+		})
+		console.log(course);
+-filter();:: tìm tất cả phần tử trùng trong mảng nếu có 2 phần tử trùng tên trong mảng thì sẽ trả về 2 kết quả 
+-map();:: duyệt từng phần tử trong mảng
+		function courersHandlder(course) {
+   		 console.log(course)
+		}
+		var newCourses = courses.map(courersHandlder);
+
+-reduce();
+
+--includes(''): tìm kiếm từ gì đó trong chuỗi 
+ex: var title=" nguyễn nam";
+	console.log(title.includes("nam",1));// tìm kiếm chữ nam từ vị trí số 1 trở đi 
+		trả về true, false;
+
+----
+-Set:: chỉ tồn tại một, phương thức có sẵn khởi tạo bằng new, nếu giông nhau thì nó sẽ lấy chỉ 1 caí
+
+---------------------------
+//element:ID, class, tag, CSS selector, HTML selection
+// 
+document.getElementByGetID('');
+document.getElementsByClassName('');
+document.getElementsByTagName('');// duyệt qua tên thẻ nên sử dụng h1 thui 
+Css selector :: var headingNode = document.querySelector('.heading');
+ 
+
+
+
+
+
+ 
