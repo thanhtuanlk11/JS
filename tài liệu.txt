@@ -102,6 +102,11 @@ Css selector :: var headingNode = document.querySelector('.heading');
 ------------------------------------------------
 *<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button> : sự kiện on click đổi chữ html
 
+JavaScript có thể "hiển thị" dữ liệu theo những cách khác nhau:
+	+Viết vào một phần tử HTML, sử dụng innerHTML.
+	+Viết vào đầu ra HTML bằng cách sử dụng document.write().
+	+Viết vào một hộp cảnh báo, sử dụng window.alert().
+	+Ghi vào bảng điều khiển của trình duyệt bằng cách sử dụng console.log().
 
 
 
