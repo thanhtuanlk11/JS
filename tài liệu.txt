@@ -99,6 +99,9 @@ document.getElementsByClassName('');
 document.getElementsByTagName('');// duyệt qua tên thẻ nên sử dụng h1 thui 
 Css selector :: var headingNode = document.querySelector('.heading');
  
+------------------------------------------------
+*<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button> : sự kiện on click đổi chữ html
+
 
 
 
