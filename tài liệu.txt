@@ -109,6 +109,9 @@ JavaScript có thể "hiển thị" dữ liệu theo những cách khác nhau:
 	+Ghi vào bảng điều khiển của trình duyệt bằng cách sử dụng console.log().
 
 
+** sửa dụng let hoặc var để khai báo 
+
+
 
 
 
