@@ -110,6 +110,11 @@ JavaScript có thể "hiển thị" dữ liệu theo những cách khác nhau:
 
 
 ** sửa dụng let hoặc var để khai báo 
+There are 3 ways to declare a JavaScript variable:
+
+*Using var
+*Using let
+*Using const
 
 
 
